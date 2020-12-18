@@ -1,0 +1,10 @@
+update statistics high for table bmsql_config;
+update statistics high for table bmsql_new_order;
+update statistics high for table bmsql_order_line;
+update statistics high for table bmsql_oorder;
+update statistics high for table bmsql_history;
+update statistics high for table bmsql_customer;
+update statistics high for table bmsql_stock;
+update statistics high for table bmsql_item;
+update statistics high for table bmsql_district;
+update statistics high for table bmsql_warehouse;
