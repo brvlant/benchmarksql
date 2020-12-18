@@ -1,0 +1,49 @@
+Manifest-Version: 1.0
+Implementation-Title: Informix JDBC Driver
+Bundle-Description: Informix JDBC Driver
+Build-Date: 2020-06-15T16:54:07-0500
+Bundle-SymbolicName: com.ibm.informix.jdbc
+Build-Number: 79
+Implementation-Version: 4.50.4.1
+Bundle-ManifestVersion: 2
+Bnd-LastModified: 1592257528678
+Import-Package: com.informix.asf;version="[4.50,5)",com.informix.csm;v
+ ersion="[4.50,5)",com.informix.csm.crypto;version="[4.50,5)",com.info
+ rmix.jdbc;version="[4.50,5)",com.informix.jdbc.lob;version="[4.50,5)"
+ ,com.informix.jdbc.udt;version="[4.50,5)",com.informix.jdbc.udt.bson;
+ version="[4.50,5)",com.informix.jdbcx;version="[4.50,5)",com.informix
+ .jns;version="[4.50,5)",com.informix.lang;version="[4.50,5)",com.info
+ rmix.util;version="[4.50,5)",javax.crypto,javax.crypto.interfaces,jav
+ ax.crypto.spec,javax.naming,javax.naming.directory,javax.naming.spi,j
+ avax.net,javax.net.ssl,javax.sql,javax.transaction.xa,org.bson;versio
+ n="[3.8,4)",org.bson.assertions;version="[3.8,4)",org.bson.codecs;ver
+ sion="[3.8,4)",org.bson.codecs.configuration;version="[3.8,4)",org.bs
+ on.internal;version="[3.8,4)",org.bson.io;version="[3.8,4)",org.bson.
+ json;version="[4.50,5)",org.bson.types;version="[3.8,4)",org.ietf.jgs
+ s
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-4.0.0.201805111645
+Main-Class: com.informix.jdbc.Version
+Export-Package: com.informix.asf;version="4.50.4.1";uses:="com.informi
+ x.jns,com.informix.lang,com.informix.util,javax.crypto",com.informix.
+ csm;version="4.50.4.1";uses:="com.informix.asf",com.informix.csm.cryp
+ to;version="4.50.4.1";uses:="com.informix.csm",com.informix.jdbc;vers
+ ion="4.50.4.1";uses:="com.informix.asf,com.informix.csm,com.informix.
+ csm.crypto,com.informix.lang,com.informix.util,org.bson,org.bson.code
+ cs.configuration,org.bson.json",com.informix.jdbc.lob;version="4.50.4
+ .1",com.informix.jdbc.udt;version="4.50.4.1",com.informix.jdbc.udt.bs
+ on;version="4.50.4.1";uses:="com.informix.lang,org.bson,org.bson.code
+ cs,org.bson.codecs.configuration",com.informix.jdbcx;version="4.50.4.
+ 1";uses:="com.informix.jdbc,com.informix.lang,com.informix.util,javax
+ .naming,javax.naming.spi,javax.sql,javax.transaction.xa",com.informix
+ .jns;version="4.50.4.1",com.informix.judr;version="4.50.4.1",com.info
+ rmix.lang;version="4.50.4.1";uses:="com.informix.jdbc",com.informix.s
+ martTrigger;version="4.50.4.1";uses:="javax.sql",com.informix.types;v
+ ersion="4.50.4.1",com.informix.util;version="4.50.4.1";uses:="com.inf
+ ormix.asf,com.informix.csm,com.informix.jdbc,com.informix.jns",org.bs
+ on.json;version="4.50.4.1";uses:="org.bson,org.bson.codecs,org.bson.c
+ odecs.configuration,org.bson.types"
+Bundle-Name: Informix JDBC Driver
+Bundle-Version: 4.50.4.1
+Created-By: 1.8.0_151 (IBM Corporation)
+
