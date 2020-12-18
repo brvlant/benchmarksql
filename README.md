@@ -55,4 +55,11 @@ Additional Informix environment settings are up to you and those provided in the
    benchmarksql/run $ ./runDatabaseDestroy.sh sample.informix.properties
    ```
 
+---
+
+**TODO**
+
+- [ ] tune **run/sql.informix** content (current version was prepared quickly without much optimization)
+  
+- [ ] write SPL procedures based on postgres counterpart in [run/sql.postgres/storedPRocedureCreates.sql](https://github.com/brvlant/benchmarksql/blob/master/run/sql.postgres/storedProcedureCreates.sql)
 
