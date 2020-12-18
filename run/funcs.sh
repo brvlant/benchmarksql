@@ -38,6 +38,9 @@ function setCP()
 	postgres)
 	    cp="../lib/postgres/*:../lib/*"
 	    ;;
+	informix)
+	    cp="../lib/informix/*:../lib/*"
+	    ;;
     esac
     myCP=".:${cp}:../dist/*"
     export myCP
@@ -48,7 +51,7 @@ function setCP()
 # is a database, we support.
 # ----
 case "$(getProp db)" in
-    firebird|oracle|postgres)
+    firebird|oracle|postgres|informix)
 	;;
     "")	echo "ERROR: missing db= config option in ${PROPS}" >&2
 	exit 1

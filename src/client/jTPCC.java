@@ -131,6 +131,8 @@ public class jTPCC implements jTPCCConfig
 	    dbType = DB_ORACLE;
 	else if (iDB.equals("postgres"))
 	    dbType = DB_POSTGRES;
+	else if (iDB.equals("informix"))
+	    dbType = DB_INFORMIX;
 	else
 	{
 	    log.error("unknown database type '" + iDB + "'");
