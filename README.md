@@ -18,19 +18,20 @@ OR steps described below:
 2. Enter into **benchmarksql** directory
 3. Run
    > ant
+
    and wait for it to build.
    Expected output should look similar to the one below:
    ```shell
-   pi@pocket:~/GITHUB/benchmarksql $ ant
+   $ ant
    Buildfile: /home/pi/GITHUB/benchmarksql/build.xml
 
    init:
 
    compile:
-       [javac] Compiling 11 source files to /home/pi/GITHUB/benchmarksql/build
+       [javac] Compiling 11 source files to benchmarksql/build
 
    dist:
-         [jar] Building jar: /home/pi/GITHUB/benchmarksql/dist/BenchmarkSQL-5.1.jar
+         [jar] Building jar: benchmarksql/dist/BenchmarkSQL-5.1.jar
 
    BUILD SUCCESSFUL
    Total time: 4 seconds
@@ -40,13 +41,13 @@ Additional Informix environment settings are up to you and those provided in the
 
 5. Enter [run](https://github.com/brvlant/benchmarksql/tree/master/run) directory and run:
    ```shell
-   pi@pocket:~/GITHUB/benchmarksql/run $ ./runDatabaseBuild.sh sample.informix.properties
+   benchmarksql/run $ ./runDatabaseBuild.sh sample.informix.properties
    ```
 
    wait for it to finish and then
 
    ```shell
-   pi@pocket:~/GITHUB/benchmarksql/run $ ./runBenchmark.sh sample.informix.properties
+   benchmarksql/run $ ./runBenchmark.sh sample.informix.properties
    ```
    wait for it :sparkles:
 
@@ -60,6 +61,8 @@ Additional Informix environment settings are up to you and those provided in the
 **TODO**
 
 - [ ] tune **run/sql.informix** content (current version was prepared quickly without much optimization)
+
+- [ ] get rid of **(-268) ISAM error** probably due to lack of procedures - see below
   
 - [ ] write SPL procedures based on postgres counterpart in [run/sql.postgres/storedPRocedureCreates.sql](https://github.com/brvlant/benchmarksql/blob/master/run/sql.postgres/storedProcedureCreates.sql)
 
